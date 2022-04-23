@@ -71,6 +71,11 @@ require('packer').startup({
 		use({'haishanh/night-owl.vim'})
 		-- }}}
 		--
+
+		-- {{{ Others
+		use({'andweeb/presence.nvim'})
+
+		-- }}}
 	end,
 	-- display packer dialouge in the center in a floating window
 	config = {

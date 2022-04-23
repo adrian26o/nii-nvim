@@ -18,7 +18,7 @@ local scheme = require('lib.scheme')
 
 -- if you don't  want to specify the theme for each component,
 -- you can use the following function
-scheme.load_shared_scheme('everforest')
+scheme.load_shared_scheme('onedark')
 
 -- set the statusline and tabline style
 -- you can change the characters used

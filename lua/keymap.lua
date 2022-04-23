@@ -34,15 +34,17 @@ local M = {}
 -- {{{ misc bindings
 vim.g.mapleader = ' ' -- Map leader key to space
 vim.g.maplocalleader = ','
-map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
-map('', '<C-c>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
-map('', '<C-t>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
+map('n', '<leader>n', ':set rnu!<CR>', opt) -- toggle relative line numbers
+map('', '<leader>cc', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
+map('', '<leader>t', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
 map('n', '<leader>nf', ':Neoformat<CR>', { noremap = true }) -- format current buffer with neoformat
-map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
+map('n', '<leader>d', ':Dashboard<CR>', opt) -- map show dashboard
+
+
 
 -- clipboard mappings
-map('n', '<leader>ya', ':%y+<CR>', opt) -- Copy content of entire buffer to system clipboard
-map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
+map('n', '<leader>ca', ':%y+<CR>', opt) -- Copy content of entire buffer to system clipboard
+map('n', '<leader>cl', '"+yy', opt) -- yank current line into system clipboard
 
 -- write buffer changes
 map('n', 'WW', ":w<CR>", opt)
@@ -101,11 +103,29 @@ map('n', '<leader>h', ':wincmd h<CR>', opt)
 map('n', '<leader>j', ':wincmd j<CR>', opt)
 map('n', '<leader>k', ':wincmd k<CR>', opt)
 map('n', '<leader>l', ':wincmd l<CR>', opt)
+
+
+-- Horizontal split
+map('n', '<leader>L', ':vsplit<CR>', opt)
+
+-- Vertical Split
+map('n', '<leader>J', ':split<CR>', opt)
+
+-- Fast Quit
+-- Only Quit
+map('n', '<leader>qq', ':q<CR>', opt)
+
+-- Write and Quit
+map('n', '<leader>wq', ':wq<CR>', opt)
+
+-- Force Quit
+map('n', '<leader>QQ', ':q!<CR>', opt)
+
 -- }}}
 
 -- {{{ terminal commands
-map('n', '<leader><CR>', ':vs | terminal<CR>i', opt)
-map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
+map('n', '<leader><', ':vs | terminal<CR>i', opt)
+map('n', '<leader><CR>', ':sp | terminal<CR>i', opt)
 map('t', '<C-esc>', '<C-\\><C-n>', opt)
 -- }}}
 
