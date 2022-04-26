@@ -48,6 +48,11 @@ require('packer').startup({
 		use({ 'phaazon/hop.nvim', commit = 'e2f978b' })
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' }, commit = '565b94d' })
 		use({ 'folke/which-key.nvim', commit = 'a3c19ec' })
+
+		use({'alvan/vim-closetag'})
+
+		use({'gelguy/wilder.nvim'})
+
 		-- }}}
 
 		-- {{{ imporved syntax plugins
@@ -72,9 +77,9 @@ require('packer').startup({
 		-- }}}
 		--
 
-		-- {{{ Others
+		-- {{{ Other
 		use({'andweeb/presence.nvim'})
-
+		use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
 		-- }}}
 	end,
 	-- display packer dialouge in the center in a floating window

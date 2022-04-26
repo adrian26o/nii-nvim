@@ -18,7 +18,8 @@ return {
 	require('config.plug.nvimcomment'),
 	require('config.plug.nvimcolorizer'),
 	require('config.plug.treesitter'),
-	require('config.plug.presence')
+	require('config.plug.presence'),
+	require('config.plug.wilder')
 }
 
 -- # vim foldmethod=marker
