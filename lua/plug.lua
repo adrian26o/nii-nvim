@@ -69,6 +69,7 @@ require('packer').startup({
 		use({'morhetz/gruvbox'})
 		use({'shaunsingh/nord.nvim'})
 		use({'sainnhe/gruvbox-material'})
+		use({'folke/tokyonight.nvim'})
 
 		-- neesh themes
 		use({'sainnhe/everforest'})

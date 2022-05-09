@@ -6,6 +6,7 @@ require('keymap')
 require('options')
 require('autocmds')
 
+
 -- load theme loading library
 local scheme = require('lib.scheme')
 
@@ -18,7 +19,7 @@ local scheme = require('lib.scheme')
 
 -- if you don't  want to specify the theme for each component,
 -- you can use the following function
-scheme.load_shared_scheme('onedark')
+scheme.load_shared_scheme('tokyo-night')
 
 -- set the statusline and tabline style
 -- you can change the characters used
