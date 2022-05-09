@@ -5,7 +5,7 @@ require('packer').startup({
 
 		-- {{{ lsp/autocompletion/snippets
 		-- lsp plugins
-		use({ 'neovim/nvim-lspconfig', commit = '9069d14' })
+		use({ 'neovim/nvim-lspconfig' })
 		use({ 'onsails/lspkind-nvim', commit = '57e5b5d' })
 
 		-- autocompletion
@@ -20,7 +20,7 @@ require('packer').startup({
 		})
 
 		-- snippets
-		use({ 'sirver/ultisnips', commit = 'c6ace8c' })
+		use({ 'sirver/ultisnips' })
 		use({ 'quangnguyen30192/cmp-nvim-ultisnips', commit = 'c6ace8c' })
 		-- }}}
 
@@ -58,7 +58,7 @@ require('packer').startup({
 		-- {{{ imporved syntax plugins
 		-- these add in a bit more bling and flair to nvim
 		use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-		use({ 'glepnir/dashboard-nvim', disable = false, commit = 'a8bce85'})
+		use({ 'glepnir/dashboard-nvim', disable = false})
 		use({'norcalli/nvim-colorizer.lua', commit = '36c610a'})
 		-- }}}
 
